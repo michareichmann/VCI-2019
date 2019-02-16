@@ -1,0 +1,92 @@
+\section{3D Pixel Detectors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\SI{1x5}{} Ganging}
+\begin{frame}{\SI{1x5}{} Ganging}
+
+	\fig{.5}{3DATLAS}[Final Detector]	
+	
+	\begin{itemize}\itemfill
+		\item readout chip (ROC): ATLAS FEI4
+		\item Size: \SI{5x5}{\milli\meter}
+		\item active area \SI{3x3}{\milli\meter}
+		\item tin-silver bump bonding at IFAE (Barcelona)
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Efficiencies}
+
+	\subfigs{\subfig{.5}{EffAtH}[High treshold]}{\subfig{.5}{EffAtL}[Low threshold]}
+	
+	\begin{itemize}\itemfill
+		\item efficiencies
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Time over Threshold}
+
+	\fig{.5}{ToTAt}[Time over Threshold]	
+	
+	\begin{itemize}\itemfill
+		\item tot
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\SI{2x3}{} Ganging}
+\begin{frame}{\SI{2x3}{} Ganging}
+
+	\fig{.4}{3DCMS}[Final Detector]	
+	
+	\begin{itemize}\itemfill
+		\item readout chip (ROC): CMS PSI46digv2.1repspin
+		\item Size: \SI{5x5}{\milli\meter}
+		\item active area \SI{3.5x3.5}{\milli\meter}
+		\item indium bump-bonding (Princeton)
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Efficiencies - First Beam Test}
+
+	\only<1>{\subfigs{\subfig{.45}[r]{EffMap}[Efficiency Map Diamond]}{\subfig{.45}[r]{EffS}[Efficiency Map Silicon]}}
+	\only<2>{\subfigs{\subfig{.45}[r]{EffMap}[Efficiency Map]}{\subfig{.45}[r]{EffVol}[Efficiency vs. voltage]}}
+	
+	\begin{itemize}\itemfill
+		\item<1-> top right corner of the diamond badly bump bonded
+		\only<1>{\item efficiency in red fiducial area: Diamond: \SI{99.1}{\%}, Silicon: \SI{99.9}{\%}}
+		\only<2>{\item effective efficiency in red fiducial area: \SI{99.2}{\%}}
+		\item<2> already fully efficient at \SI{20}{\volt}
+		\item<2> ROC malfunctioned after this beam test
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Efficiencies - Second Beam Test}
+
+	\only<1>{\subfigs{\subfig{.45}[r]{EffMap2}[Efficiency Map Diamond]}{\subfig{.45}[r]{EffS2}[Efficiency Map Silicon]}}
+	\only<2>{\subfigs{\subfig{.45}[r]{EffMap2}[Efficiency Map]}{\subfig{.45}[r]{EffVol2}[Efficiency vs. voltage]}}
+	
+	\begin{itemize}\itemfill
+		\item<1-> sensor twice re-bump-bonded with the same indium (no reprocessing)
+		\only<1>{\item efficiency in red fiducial area: Diamond: \SI{97.3}{\%}, Silicon: \SI{100.0}{\%}}
+		\only<2>{\item effective efficiency in red fiducial area: \SI{97.3}{\%}}
+		\item<2> already fully efficient at \SI{20}{\volt}
+		\item<2> only very small area working well \ra many bump bond problems
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Pulse Height - Second Beam Test}
+
+	\subfigs{\subfig{.45}[r]{SD}[Signal Distribution]}{\subfig{.45}[r]{PHV}[Pulse height vs. voltage]}
+	
+	\begin{itemize}\itemfill
+		\item wrong pulse height calibration in first beam test
+		\item full charge collection also already at \SI{20}{\volt}
+		\item mean pulse height lower than expected: \SI{11000}{e}
+		\item probably connected to bad bump bonding
+	\end{itemize}
+	
+\end{frame}
