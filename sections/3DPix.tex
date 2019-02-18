@@ -24,12 +24,14 @@
 	
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Time over Threshold}
+\begin{frame}{Time Over Threshold}
 
-	\fig{.5}{ToTAt}[Time over Threshold]	
+	\fig{.5}{ToTAt}[Time over threshold]	
 	
 	\begin{itemize}\itemfill
-		\item tot
+		\item \SI{5}{tot} $\approx$ \SI{10000}{e}
+		\item mean of the ToT distribution: 6.53 \ra \SI{13000}{e}
+		\item \SI{71}{\%} of the charge collected
 	\end{itemize}
 	
 \end{frame}
@@ -54,11 +56,12 @@
 	\only<2>{\subfigs{\subfig{.45}[r]{EffMap}[Efficiency Map]}{\subfig{.45}[r]{EffVol}[Efficiency vs. voltage]}}
 	
 	\begin{itemize}\itemfill
-		\item<1-> top right corner of the diamond badly bump bonded
+		\item<1-> beam test right after the first bump bonding (top right corner badly bonded)
+		\item<1-> spatial resolution of \orderof{\SI{100}{\micro\meter}}
 		\only<1>{\item efficiency in red fiducial area: Diamond: \SI{99.1}{\%}, Silicon: \SI{99.9}{\%}}
-		\only<2>{\item effective efficiency in red fiducial area: \SI{99.2}{\%}}
-		\item<2> already fully efficient at \SI{20}{\volt}
-		\item<2> ROC malfunctioned after this beam test
+		\only<2>{\item effective efficiency (relative to silicon) in red fiducial area: \SI{99.2}{\%}}
+		\item<2> already fully efficient at \SI{30}{\volt}
+		\item<2> ROC stopped working after this beam test
 	\end{itemize}
 	
 \end{frame}
@@ -70,7 +73,10 @@
 	\begin{itemize}\itemfill
 		\item high resolution measurement at CERN
 		\item sensor twice re-bump-bonded with the same indium (no reprocessing)
-		\item reduced efficiency
+		\begin{itemize}
+			\item no removal of old bumps, no change of surface metallisation
+		\end{itemize}
+		\item non working columns not accounted in efficiency
 	\end{itemize}
 	
 \end{frame}
@@ -84,7 +90,7 @@
 		\item<1-> sensor twice re-bump-bonded with the same indium (no reprocessing)
 		\only<1>{\item efficiency in red fiducial area: Diamond: \SI{97.3}{\%}, Silicon: \SI{100.0}{\%}}
 		\only<2>{\item effective efficiency in red fiducial area: \SI{97.3}{\%}}
-		\item<2> already fully efficient at \SI{20}{\volt}
+		\item<2> already fully efficient at \SI{30}{\volt}
 		\item<2> only very small area working well \ra many bump bond problems
 	\end{itemize}
 	
@@ -96,9 +102,9 @@
 	
 	\begin{itemize}\itemfill
 		\item wrong pulse height calibration in first beam test
-		\item full charge collection also at \SI{20}{\volt}
-		\item mean pulse height lower than expected: \SI{11000}{e}
-		\item probably connected to bad bump bonding
+		\item full charge collection also at \SI{30}{\volt}
+		\item mean pulse height: \SI{11000}{e}
+		\item low pulse height not understood
 	\end{itemize}
 	
 \end{frame}

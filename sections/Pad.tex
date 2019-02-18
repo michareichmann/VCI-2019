@@ -6,8 +6,9 @@
 	\fig[r]{.5}{CF}[Leakage Current of a non-irradiated pCVD diamond]
 		
 	\begin{itemize}\itemfill
-		\item leakage current of most of the diamonds linear in flux
 		\item very low base leakage current (no beam) of \orderof{\SI{1}{\nano\ampere}}
+		\item leakage current of most of the diamonds linear in flux
+		\item basis of most diamond beam monitors at CERN
 	\end{itemize}
 	
 \end{frame}
@@ -23,46 +24,32 @@
 	\end{itemize}
 	
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Rate Studies}
-\begin{frame}{Non-Irradiated scCVD}
+\begin{frame}{Silicon Diode}
 
-	\only<1>{\vspace*{-15pt}\fig[r]{.65}{S129N}}
-	\only<2>{\vspace*{-15pt}\vspace*{.1\textheight}\fig[r]{.45}{S129P}\vspace*{.1\textheight}}
+	\fig[r]{.5}{PHSD1}
 	
 	\begin{itemize}\itemfill
-		\item rate scaled to the mean
-		\item scCVD diamond shows now rate dependence within the measurement precision
-		\item noise stays constant
+		\item silicon diode as reference 
+		\item as expected no dependence on rate
 	\end{itemize}
 	
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Non-Irradiated pCVD}
- 
-	\only<1>{\vspace*{-20pt}\fig[r]{.7}{AUN}\vspace*{-10pt}}
-	\only<2>{\vspace*{-20pt}\fig[r]{.7}{AUP}\vspace*{-10pt}}
-	
-	\begin{itemize} \itemfill
-		\item rate scaled to the mean
-		\item most non-irradiated pCVD diamonds have slight rate dependence (\SI{<5}{\%})
-		\item behaviour very similar for both positive and negative bias voltage
-	\end{itemize}
- 
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{A Special Case}
-
-	\subfigs{\subfig{.5}[r]{PHB}[First measurement]}{\subfig{.5}[r]{PHB2}[After reprocessing]}
-	
-	\begin{itemize}\itemfill
-		\item very large rate dependence at the first measurement (\SI{>90}{\%})
-		\item after reprocessing and surface cleaning with RIE very stable behaviour (\SI{\sim2}{\%})
-		\item feasible to ``fix'' bad diamonds
-	\end{itemize}
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%% FRAME 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{frame}{Non-Irradiated pCVD}
+%  
+% 	\only<1>{\vspace*{-20pt}\fig[r]{.7}{AUN}\vspace*{-10pt}}
+% 	\only<2>{\vspace*{-20pt}\fig[r]{.7}{AUP}\vspace*{-10pt}}
+% 	
+% 	\begin{itemize} \itemfill
+% 		\item rate scaled to the mean
+% 		\item most non-irradiated pCVD diamonds have slight rate dependence (\SI{<5}{\%})
+% 		\item behaviour very similar for both positive and negative bias voltage
+% 	\end{itemize}
+%  
+% \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Rate Studies in Irradiated pCVD}
 
 	\vspace*{-15pt}\fig[r]{.65}{B2N}
@@ -71,6 +58,19 @@
 		\item rate scaled to the mean
 		\item pulse height very stable after irradiation
 		\item noise stays the same
+	\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Rate Dependence}
+
+	\subfigs{\subfig{.5}[r]{PHB}[First measurement]}{\subfig{.5}[r]{PHB2}[After reprocessing]}
+	
+	\begin{itemize}\itemfill
+		\item less than \SI{20}{\%} of the tested diamonds show rate dependence \SI{>10}{\%}
+		\item very large rate dependence at the first measurement (\SI{>90}{\%})
+		\item after reprocessing and surface cleaning with RIE very stable behaviour (\SI{\sim2}{\%})
+		\item feasible to ``fix'' bad diamonds
 	\end{itemize}
 
 \end{frame}
