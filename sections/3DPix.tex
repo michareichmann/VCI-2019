@@ -16,11 +16,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Efficiencies}
 
-	\subfigs{\subfig{.5}{EffAtL}[High treshold (\SI{3000}{e})]}{\subfig{.5}{EffAtH}[Low threshold (\SI{1000}{e})]}
+	\subfigs{\subfig{.46}{EffAtL}[High treshold (\SI{1500}{e})]}{\subfig{.46}{EffAtH}[Low threshold (\SI{1000}{e})]}
 	
 	\begin{itemize}\itemfill
 		\item two different tunings of the FEI4 chip
 		\item efficiency with low threshold significantly higher: \SI{97.7}{\%}
+		\item inefficiencies most likely due to bump bonding issues
 	\end{itemize}
 	
 \end{frame}
@@ -30,9 +31,9 @@
 	\fig{.5}{SDAtH}[Time over threshold]	
 	
 	\begin{itemize}\itemfill
-		\item \SI{5}{tot} $\approx$ \SI{10000}{e}
-		\item mean of the ToT distribution: 6.73 \ra \SI{13500}{e}
-		\item \SI{73}{\%} of the charge collected
+		\item \SI{5}{tot} $\approx$ \SI{11000}{e}
+		\item mean of the ToT distribution: 6.73 \ra \SI{14800}{e}
+		\item \SI{81}{\%} of the charge collected
 	\end{itemize}
 	
 \end{frame}
@@ -69,30 +70,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4.1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Efficiencies - CERN Beam Test}
 
-	\fig{.5}{EffCern1}
+	\fig{.5}{EffCern1}[Efficiency at threshold of \SI{\sim3500}{e}]
 	
 	\begin{itemize}\itemfill
 		\item high resolution measurement at CERN
+		\item find non-working/non-connected cells
 		\item sensor twice re-bump-bonded with the same indium (no reprocessing)
 		\begin{itemize}
 			\item no removal of old bumps, no change of surface metallisation
 		\end{itemize}
-		\item non working columns not accounted in efficiency
 	\end{itemize}
 	
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Efficiencies - Second PSI Beam Test}
 
-	\only<1>{\subfigs{\subfig{.45}[r]{EffMap2}[Efficiency Map Diamond]}{\subfig{.45}[r]{EffS2}[Efficiency Map Silicon]}}
-	\only<2>{\subfigs{\subfig{.45}[r]{EffMap2}[Efficiency Map]}{\subfig{.45}[r]{EffVol2}[Efficiency vs. voltage]}}
+% 	\only<1>{\subfigs{\subfig{.45}[r]{EffMap2}[Efficiency Map Diamond]}{\subfig{.45}[r]{EffS2}[Efficiency Map Silicon]}}
+	\subfigs{\subfig{.45}[r]{EffMap2}[Efficiency Map]}{\subfig{.45}[r]{EffVol2}[Efficiency vs. voltage]}
 	
 	\begin{itemize}\itemfill
-		\item<1-> sensor twice re-bump-bonded with the same indium (no reprocessing)
-		\only<1>{\item efficiency in red fiducial area: Diamond: \SI{97.3}{\%}, Silicon: \SI{100.0}{\%}}
-		\only<2>{\item effective efficiency in red fiducial area: \SI{97.3}{\%}}
-		\item<2> already fully efficient at \SI{30}{\volt}
-		\item<2> only very small area working well \ra many bump bond problems
+		\item sensor twice re-bump-bonded with the same indium (no reprocessing)
+% 		\only<1>{\item efficiency in red fiducial area: Diamond: \SI{97.3}{\%}, Silicon: \SI{100.0}{\%}}
+		\only{\item effective efficiency in red fiducial area: \SI{97.3}{\%}}
+		\item already fully efficient at \SI{30}{\volt}
+		\item only very small area working well \ra many bump bond problems
 	\end{itemize}
 	
 \end{frame}
@@ -104,8 +105,8 @@
 	\begin{itemize}\itemfill
 		\item wrong pulse height calibration in first beam test
 		\item full charge collection also at \SI{30}{\volt}
-		\item mean pulse height: \SI{11000}{e}
-		\item low pulse height not understood
+		\item mean pulse height: \SI{11000}{e} \ra $\simeq$\SI{14000}{e} at CERN \ra consistent with \SI{1x5}{} data
+% 		\item low pulse height not understood
 	\end{itemize}
 	
 \end{frame}
